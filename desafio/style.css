@@ -43,11 +43,17 @@ header > p{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav > a {
-        padding: 8px 5px; 
-        font-size: 0.9em; 
-        gap: 5px;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+        font-size: 1em;
     }
 }
 
