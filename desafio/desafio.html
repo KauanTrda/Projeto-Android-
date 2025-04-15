@@ -12,11 +12,28 @@
     <header>
         <h1>Curiosidades de Tecnologia</h1>
         <p> Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
-        <nav>
+        <nav  id = link>
             <a href="">Home</a>
             <a href="">Notícias</a>
             <a href="">Curiosidades</a>
             <a href="">Fale Conosco</a>
+
+            <script>
+                //celeciona todos os <a> dentro de <nav>
+                const links = document.querySelectorAll('#link a')
+
+                links.forEach((a) => {
+                    a.addEventListener('mouseenter', () => {
+                        a.style.backgroundColor = 'green'
+                        a.style.color = 'white'
+                    })
+                    a.addEventListener('mouseleave', () => {
+                        a.style.backgroundColor= ''
+                        a.style.color = ''
+                    })
+                })
+               
+            </script>
         </nav>
     </header>
 

@@ -67,11 +67,13 @@ nav > a {
     transition: 0.3s;
 }
 
+/*
 nav > a:hover {
     background-color: rgb(144, 255, 149);
     color: green;
     border-radius: 6px;
-}
+}*/
+
 
 /* MAIN */
 main {
